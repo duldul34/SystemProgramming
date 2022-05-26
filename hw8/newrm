@@ -1,0 +1,18 @@
+#!/bin/bash
+
+HOME="/home/user1/"
+
+if [ -f ${HOME}".junk" ]; then
+	echo "~.junk file already exits"
+	exit
+elif [ ! -d ${HOME}".junk" ]; then
+	mkdir ${HOME}.junk
+	echo "mkdir"
+fi
+
+for i in $*
+do
+	cp $i ${HOME}.junk
+	rm $i
+	echo ${i}" is erased"
+done

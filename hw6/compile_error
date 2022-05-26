@@ -1,0 +1,4 @@
+hw2.c: In function ‘main’:
+hw2.c:8:3: warning: incompatible implicit declaration of built-in function ‘exit’ [enabled by default]
+   exit(1);
+   ^

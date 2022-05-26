@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function exam1 { 
+	exit 
+}
+
+function exam2 { 
+	echo Excute Function 
+}
+
+exam2
+exam1
+echo Final
